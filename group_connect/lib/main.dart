@@ -17,6 +17,7 @@ class _PersonalState extends State<Personal> {
     return Container(
       color: Colors.amber,
       height: 12,
+      width: 12,
     );
   }
 }
