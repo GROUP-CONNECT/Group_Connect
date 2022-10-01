@@ -16,6 +16,7 @@ class _PersonalState extends State<Personal> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
+      height: 12,
     );
   }
 }
