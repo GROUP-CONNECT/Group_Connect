@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:Group_Connect/models/course.dart';
+import 'package:Group_Connect/group_connect/models/course.dart';
 import 'package:Group_Connect/models/userProfile.dart';
 
 class ListUser extends StatelessWidget {
