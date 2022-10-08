@@ -2,6 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:Group_Connect/Screens/Welcome/welcome_screen.dart';
 import 'package:Group_Connect/constants.dart';
 
+import 'package:Group_Connect/Home/mainNav.dart';
+import 'package:flutter/material.dart';
+
+import 'screens/SCREENS/auth.dart';
+import 'screens/SCREENS/feed.dart';
+import 'screens/SCREENS/courseHome.dart';
+import 'screens/SCREENS/addPostInCourse.dart';
+import 'screens/SCREENS/createCourse.dart';
+import 'screens/SCREENS/enrolledCourse.dart';
+import 'screens/SCREENS/userHome.dart';
+
+import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
+import 'providers/Auth.dart';
+import 'providers/Course.dart';
+import 'providers/coursePost.dart';
+import 'screens/SCREENS/loading.dart';
+import 'screens/SCREENS/courseDetail.dart';
+import 'package:Group_Connect/Home/mainNav.dart';
+import 'package:Group_Connect/Home/courseNav.dart';
+import 'package:Group_Connect/screens/SCREENS/coursePostDetail.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Auth',
+      title: 'Group Connect',
       theme: ThemeData(
           primaryColor: kPrimaryColor,
           scaffoldBackgroundColor: Colors.white,

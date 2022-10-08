@@ -89,23 +89,23 @@ class FeedCard extends StatelessWidget {
                           children: <Widget>[
                             Container(
                                 margin: EdgeInsets.symmetric(horizontal: 10),
-                                child: OutlineButton(
+                                child: OutlinedButton(
                                   child: const Text(
                                     'View Course',
                                   ),
                                   //  color: Colors.black87,
-                                  textColor: Colors.black87,
+                                  //textColor: Colors.black87,
                                   onPressed: () {
                                     Navigator.pushNamed(
                                         context, CourseDetail.routeName,
                                         arguments: screenArguments);
                                   },
                                 )),
-                            OutlineButton(
+                            OutlinedButton(
                               child: const Text('Enroll'),
 
                               //  color: Theme.of(context).primaryColor,
-                              textColor: Theme.of(context).primaryColor,
+                              //textColor: Theme.of(context).primaryColor,
                               onPressed: () {
                                 Provider.of<CourseProvider>(context,
                                         listen: false)
