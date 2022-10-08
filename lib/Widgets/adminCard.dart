@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../SCREENS/courseDetail.dart';
-import '../SCREENS/courseHome.dart';
+import '../screens/SCREENS/courseDetail.dart';
+import '../screens/SCREENS/courseHome.dart';
 import '../Home/courseNav.dart';
 import 'package:Group_Connect/models/course.dart';
 

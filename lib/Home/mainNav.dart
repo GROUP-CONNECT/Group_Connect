@@ -1,17 +1,17 @@
-import 'package:Group_Connect/SCREENS/auth.dart';
+import 'package:Group_Connect/screens/SCREENS/auth.dart';
 import 'package:flutter/material.dart';
 
-import 'package:Group_Connect/SCREENS/feed.dart';
+import 'package:Group_Connect/screens/SCREENS/feed.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:provider/provider.dart';
 import 'package:Group_Connect/providers/Auth.dart';
 import 'package:Group_Connect/providers/Course.dart';
 import 'package:Group_Connect/providers/coursePost.dart';
-import '../SCREENS/createCourse.dart';
+import '../screens/SCREENS/createCourse.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:Group_Connect/SCREENS/enrolledCourse.dart';
-import 'package:Group_Connect/SCREENS/userHome.dart';
+import 'package:Group_Connect/screens/SCREENS/enrolledCourse.dart';
+import 'package:Group_Connect/screens/SCREENS/userHome.dart';
 
 class MainNav extends StatefulWidget {
   @override
@@ -81,35 +81,29 @@ class _MainNavState extends State<MainNav> {
             body: pages[pageIndex],
             bottomNavigationBar: BottomNavigationBar(
               backgroundColor: Theme.of(context).primaryColor,
+              // ignore: prefer_const_literals_to_create_immutables
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(
-                      IconData(0xe871, fontFamily: 'MaterialIcons'),
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'Dashboard',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: Icon(
+                    IconData(0xe871, fontFamily: 'MaterialIcons'),
+                    color: Colors.white,
+                  ),
+                  label: ('dashboard'),
+                ),
                 BottomNavigationBarItem(
                     icon: Icon(
                       IconData(0xe039, fontFamily: 'MaterialIcons'),
                       color: Colors.white,
                     ),
-                    title: Text(
-                      'Enrolled',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                    label: 'Enrolled'),
                 BottomNavigationBarItem(
-                    icon: CircleAvatar(
-                      radius: 15,
-                      foregroundColor: Colors.cyan,
-                      backgroundImage: NetworkImage(profile_picture),
-                    ),
-                    title: Text(
-                      'Your courses',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: CircleAvatar(
+                    radius: 15,
+                    foregroundColor: Colors.cyan,
+                    backgroundImage: NetworkImage(profile_picture),
+                  ),
+                  label: ('Your Courses'),
+                ),
               ],
               currentIndex: pageIndex,
               onTap: (i) {

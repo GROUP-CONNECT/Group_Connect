@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:E_Learning/models/course-post.dart';
+import 'package:Group_Connect/models/course-post.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/coursePost.dart';
-import 'package:E_Learning/Widgets/coursePost.dart';
+import 'package:Group_Connect/providers/coursePost.dart';
+import 'package:Group_Connect/Widgets/coursePost.dart';
 
 class CoursePosts extends StatefulWidget {
   @override

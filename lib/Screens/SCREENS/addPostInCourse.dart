@@ -1,7 +1,7 @@
-import 'package:E_Learning/models/course.dart';
+import 'package:Group_Connect/models/course.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/coursePost.dart';
+import 'package:Group_Connect/providers/coursePost.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:video_player/video_player.dart';
@@ -86,7 +86,7 @@ class _AddPostCourseState extends State<AddPostCourse> {
             title: Text('Error'),
             content: Text('Title and description are mandatory'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: Text('Okay'),
                 onPressed: () {
                   Navigator.of(ctx).pop();

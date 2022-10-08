@@ -2,8 +2,8 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'createCourse.dart';
-import 'package:E_Learning/Home/courseNav.dart';
-import 'package:E_Learning/models/course-post.dart';
+import 'package:Group_Connect/Home/courseNav.dart';
+import 'package:Group_Connect/models/course-post.dart';
 import 'package:video_player/video_player.dart';
 
 class CoursePostDetail extends StatefulWidget {

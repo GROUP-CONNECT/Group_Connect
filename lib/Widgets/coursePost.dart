@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:Group_Connect/models/course-post.dart';
-import '../SCREENS/coursePostDetail.dart';
+import '../screens/SCREENS/coursePostDetail.dart';
 
 class CoursePostWidget extends StatelessWidget {
   CoursePost coursePost;

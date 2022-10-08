@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:Group_Connect/SCREENS/addPostInCourse.dart';
-import 'package:Group_Connect/SCREENS/courseHome.dart';
+import 'package:Group_Connect/screens/SCREENS/addPostInCourse.dart';
+import 'package:Group_Connect/screens/SCREENS/courseHome.dart';
 import 'package:Group_Connect/models/course.dart';
-import 'package:Group_Connect/SCREENS/enrolledUser.dart';
+import 'package:Group_Connect/screens/SCREENS/enrolledUser.dart';
 import 'package:provider/provider.dart';
 import 'package:Group_Connect/providers/coursePost.dart';
-import 'package:Group_Connect/SCREENS/information.dart';
+import 'package:Group_Connect/screens/SCREENS/information.dart';
 
 class CourseNav extends StatefulWidget {
   @override
@@ -66,33 +66,24 @@ class _CourseNavState extends State<CourseNav> {
               backgroundColor: Theme.of(context).primaryColor,
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(
-                      IconData(0xe871, fontFamily: 'MaterialIcons'),
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'Feed',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: Icon(
+                    IconData(0xe871, fontFamily: 'MaterialIcons'),
+                    color: Colors.white,
+                  ),
+                  label: 'feed',
+                ),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.info_outline, color: Colors.white),
-                    title: Text(
-                      'Information',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: Icon(Icons.info_outline, color: Colors.white),
+                  label: 'information',
+                ),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.account_circle, color: Colors.white),
-                    title: Text(
-                      'Enrolled users',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                    label: 'enrolled users'),
                 BottomNavigationBarItem(
-                    icon: Icon(IconData(57672, fontFamily: 'MaterialIcons'),
-                        color: Colors.white),
-                    title: Text(
-                      'Add post',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: Icon(IconData(57672, fontFamily: 'MaterialIcons'),
+                      color: Colors.white),
+                  label: 'add post',
+                ),
               ],
               currentIndex: pageIndex,
               onTap: (i) {
@@ -107,20 +98,16 @@ class _CourseNavState extends State<CourseNav> {
               backgroundColor: Theme.of(context).primaryColor,
               items: [
                 BottomNavigationBarItem(
-                    icon: Icon(
-                      IconData(0xe871, fontFamily: 'MaterialIcons'),
-                      color: Colors.white,
-                    ),
-                    title: Text(
-                      'Feed',
-                      style: TextStyle(color: Colors.white),
-                    )),
+                  icon: Icon(
+                    IconData(0xe871, fontFamily: 'MaterialIcons'),
+                    color: Colors.white,
+                  ),
+                  label: 'feed',
+                ),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.info_outline, color: Colors.white),
-                    title: Text(
-                      'Information',
-                      style: TextStyle(color: Colors.white),
-                    ))
+                  icon: Icon(Icons.info_outline, color: Colors.white),
+                  label: 'information',
+                )
               ],
               currentIndex: pageIndex,
               onTap: (i) {

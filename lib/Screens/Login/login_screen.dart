@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/responsive.dart';
+import 'package:Group_Connect/responsive.dart';
 
 import '../../components/background.dart';
+import '../../responsive.dart';
 import 'components/login_form.dart';
 import 'components/login_screen_top_image.dart';
 

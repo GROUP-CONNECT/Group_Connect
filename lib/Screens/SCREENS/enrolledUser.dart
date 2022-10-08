@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'createCourse.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/Widgets/userGrid.dart';
-import 'package:E_Learning/models/userProfile.dart';
-import 'package:E_Learning/providers/coursePost.dart';
-import 'package:E_Learning/providers/coursePost.dart';
+import 'package:Group_Connect/Widgets/userGrid.dart';
+import 'package:Group_Connect/models/userProfile.dart';
+import 'package:Group_Connect/providers/coursePost.dart';
+import 'package:Group_Connect/providers/coursePost.dart';
 
 class EnrolledUser extends StatefulWidget {
   @override

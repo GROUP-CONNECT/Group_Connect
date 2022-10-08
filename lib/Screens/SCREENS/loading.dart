@@ -1,9 +1,9 @@
-import 'package:E_Learning/SCREENS/auth.dart';
+import 'package:Group_Connect/screens/SCREENS/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/Auth.dart';
-import 'package:E_Learning/Home/mainNav.dart';
-import 'package:E_Learning/models/userProfile.dart';
+import 'package:Group_Connect/providers/Auth.dart';
+import 'package:Group_Connect/Home/mainNav.dart';
+import 'package:Group_Connect/models/userProfile.dart';
 
 class Loading extends StatefulWidget {
   static const routeName = '/loading';

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../Widgets/FeedCard.dart';
 import 'createCourse.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/Course.dart';
-import '../Widgets/FeedCard.dart';
+import 'package:Group_Connect/providers/Course.dart';
+//import '../SCREENS/Widgets/FeedCard.dart';
 
 class EnrolledCourse extends StatefulWidget {
   @override

@@ -1,18 +1,18 @@
 import 'dart:convert';
-import 'package:group_connect/Screens/SCREENS/createCourse.dart';
+import 'package:Group_Connect/Screens/SCREENS/createCourse.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:path/path.dart' as path;
 import 'dart:ffi';
 import 'dart:io';
 import 'dart:convert';
-import 'package:group_connect/models/userProfile.dart';
+import 'package:Group_Connect/models/userProfile.dart';
 import 'package:flutter/foundation.dart';
-import 'package:group_connect/models/course.dart';
+import 'package:Group_Connect/models/course.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:group_connect/providers/Auth.dart';
+import 'package:Group_Connect/providers/Auth.dart';
 import 'package:provider/provider.dart';
-import 'package:group_connect/models/course-post.dart';
+import 'package:Group_Connect/models/course-post.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 FirebaseFirestore firestore = FirebaseFirestore.instance;

@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:Group_Connect/SCREENS/createCourse.dart';
+import 'package:Group_Connect/screens/SCREENS/createCourse.dart';
 import 'package:path/path.dart' as path;
 import 'dart:ffi';
 import 'dart:io';

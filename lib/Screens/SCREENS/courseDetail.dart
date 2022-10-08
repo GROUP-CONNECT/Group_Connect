@@ -2,10 +2,10 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'createCourse.dart';
-import 'package:E_Learning/Home/courseNav.dart';
-import 'package:E_Learning/models/course.dart';
+import 'package:Group_Connect/Home/courseNav.dart';
+import 'package:Group_Connect/models/course.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/Course.dart';
+import 'package:Group_Connect/providers/Course.dart';
 
 class CourseDetail extends StatelessWidget {
   static const routeName = '/courseDetail';

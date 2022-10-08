@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:E_Learning/providers/Course.dart';
+import 'package:Group_Connect/providers/Course.dart';
 
 class CreateCourse extends StatefulWidget {
   static const routeName = '/createCourse';
