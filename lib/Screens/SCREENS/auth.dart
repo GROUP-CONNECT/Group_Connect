@@ -1,11 +1,11 @@
-import 'package:E_Learning/Home/mainNav.dart';
-import 'package:E_Learning/SCREENS/feed.dart';
+import 'package:Group_Connect/Home/mainNav.dart';
+import 'package:Group_Connect/screens/SCREENS/feed.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 // import 'package:firebase/firebase.dart' as fb;
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/Auth.dart';
+import 'package:Group_Connect/providers/Auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Auth extends StatelessWidget {
@@ -70,7 +70,7 @@ class Auth extends StatelessWidget {
               width: 400,
               height: 50,
               margin: const EdgeInsets.symmetric(vertical: 30),
-              child: new RaisedButton(
+              child: new ElevatedButton(
                   onPressed: () async {
                     Provider.of<UserProvider>(context, listen: false)
                         .login()
@@ -85,11 +85,7 @@ class Auth extends StatelessWidget {
                             });
                   },
                   child: const Text('Tap to continue',
-                      style: TextStyle(fontSize: 20)),
-                  color: Colors.grey[200],
-                  splashColor: Colors.blue,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(15.0))),
+                
             ),
           )
         ],
