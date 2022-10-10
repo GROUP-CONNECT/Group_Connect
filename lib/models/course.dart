@@ -9,14 +9,14 @@ class Course {
   bool isAdmin, enrolled;
   UserProfile userProfile;
   Course({
-    @required this.id,
-    @required this.title,
-    @required this.description,
-    @required this.coverPhoto,
-    @required this.enrolled,
-    @required this.isAdmin,
-    @required this.enrolledId,
-    @required this.userProfile,
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.coverPhoto,
+    required this.enrolled,
+    required this.isAdmin,
+    required this.enrolledId,
+    required this.userProfile,
   });
   void set setEnrolled(bool value) {
     this.enrolled = value;

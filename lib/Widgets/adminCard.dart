@@ -5,7 +5,7 @@ import '../screens/SCREENS/courseHome.dart';
 import '../Home/courseNav.dart';
 import 'package:Group_Connect/models/course.dart';
 
-import '../models/course.dart';
+//import '../models/course.dart';
 // class FeedCard extends StatefulWidget {
 //   @override
 //   _FeedCardState createState() => _FeedCardState();
@@ -82,16 +82,11 @@ class AdminCard extends StatelessWidget {
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w400)),
                   Container(
                       width: double.infinity,
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0)),
-                        color: Theme.of(context).primaryColor,
-                        splashColor: Theme.of(context).accentColor,
+                      child: ElevatedButton(
                         child: const Text(
                           'Go to your course',
                           style: TextStyle(color: Colors.white),
                         ),
-                        textColor: Colors.blue,
                         onPressed: () {
                           Navigator.pushNamed(context, CourseNav.routeName,
                               arguments: screenArguments);

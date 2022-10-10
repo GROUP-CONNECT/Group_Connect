@@ -11,7 +11,7 @@ class CreateCourse extends StatefulWidget {
 }
 
 class _CreateCourseState extends State<CreateCourse> {
-  File _image;
+  //File _image;
   bool loading = false;
   final picker = ImagePicker();
   final _title = TextEditingController();
