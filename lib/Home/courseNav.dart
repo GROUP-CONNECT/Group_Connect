@@ -17,7 +17,7 @@ class CourseNav extends StatefulWidget {
 class _CourseNavState extends State<CourseNav> {
   @override
   int pageIndex = 0;
-  List<Widget> pages;
+  late List<Widget> pages;
   bool _isLoading = false;
 
   void initState() {

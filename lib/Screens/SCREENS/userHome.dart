@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'createCourse.dart';
 import 'package:provider/provider.dart';
-import 'package:E_Learning/providers/Course.dart';
-import '../Widgets/adminCard.dart';
+import 'package:Group_Connect/providers/Course.dart';
+import '../../Widgets/adminCard.dart';
 
 class UserHomeFeed extends StatefulWidget {
   @override

@@ -70,16 +70,11 @@ class CourseDetail extends StatelessWidget {
                     )),
                 Container(
                     width: double.infinity,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0)),
-                      color: Theme.of(context).primaryColor,
-                      splashColor: Theme.of(context).accentColor,
+                    child: ElevatedButton(
                       child: const Text(
                         'Enroll',
                         style: TextStyle(color: Colors.white),
                       ),
-                      textColor: Colors.blue,
                       onPressed: () {
                         Provider.of<CourseProvider>(context, listen: false)
                             .enrollUser(course);
