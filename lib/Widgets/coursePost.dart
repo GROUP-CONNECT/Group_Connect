@@ -5,7 +5,8 @@ import '../screens/SCREENS/coursePostDetail.dart';
 class CoursePostWidget extends StatelessWidget {
   CoursePost coursePost;
   int index = 1;
-  CoursePostWidget(CoursePost coursePostParam, int indexParam) {
+  CoursePostWidget(CoursePost coursePostParam, int indexParam, {Key? key})
+      : super(key: key) {
     // print('cons');
     // print(index);
     // print('cons');

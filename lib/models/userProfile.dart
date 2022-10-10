@@ -11,9 +11,9 @@ class UserProfile {
       @required this.gmail,
       @required this.profile_picture,
       @required this.uid,
-      this.createdCourse,
-      this.enrolledCourse,
-      this.parentId});
+      required this.createdCourse,
+      required this.enrolledCourse,
+      required this.parentId});
   void set setEnrolledCourse(dynamic value) {
     this.enrolledCourse.insert(0, value);
   }

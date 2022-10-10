@@ -9,11 +9,11 @@ class CoursePost {
 
   UserProfile userProfile;
   CoursePost({
-    @required this.postType,
-    @required this.parentId,
-    @required this.title,
-    @required this.description,
-    @required this.userProfile,
+    required this.postType,
+    required this.parentId,
+    required this.title,
+    required this.description,
+    required this.userProfile,
     this.video_link,
   });
 }

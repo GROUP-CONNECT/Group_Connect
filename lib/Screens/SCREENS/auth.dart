@@ -67,10 +67,10 @@ class Auth extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: new Container(
-              width: 400,
-              height: 50,
-              margin: const EdgeInsets.symmetric(vertical: 30),
-              child: new ElevatedButton(
+                width: 400,
+                height: 50,
+                margin: const EdgeInsets.symmetric(vertical: 30),
+                child: new ElevatedButton(
                   onPressed: () async {
                     Provider.of<UserProvider>(context, listen: false)
                         .login()
@@ -84,10 +84,11 @@ class Auth extends StatelessWidget {
                                 }
                             });
                   },
-                  child: const Text('Tap to continue',
-                
-            ),
-          )
+                  child: const Text(
+                    'Tap to continue',
+                  ),
+                )),
+          ),
         ],
       ),
     );

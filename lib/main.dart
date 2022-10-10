@@ -63,3 +63,58 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//THIS IS TRIAL
+void mains() async {
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+  } catch (e) {
+    print(e);
+  }
+  runApp(MyApp());
+}
+
+class MyApps extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => UserProvider(),
+        ),
+        ChangeNotifierProxyProvider<UserProvider, CourseProvider>(
+          create: null,
+          update: (ctx, UserProvider, previous) =>
+              CourseProvider(userProfile: UserProvider.userProfile),
+        ),
+        ChangeNotifierProxyProvider<UserProvider, CoursePostProvider>(
+          create: null,
+          update: (ctx, UserProvider, previous) =>
+              CoursePostProvider(userProfile: UserProvider.userProfile),
+        ),
+      ],
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.indigo,
+          accentColor: Colors.deepPurpleAccent,
+        ),
+        home: Loading(),
+        routes: {
+          Loading.routeName: (ctx) => Loading(),
+          Auth.routeName: (ctx) => Auth(),
+          CourseDetail.routeName: (ctx) => CourseDetail(),
+          CreateCourse.routeName: (ctx) => CreateCourse(),
+          AddPostCourse.routeName: (ctx) => CreateCourse(),
+          MainNav.routeName: (ctx) => MainNav(),
+          CourseNav.routeName: (ctx) => CourseNav(),
+          Feed.routeName: (ctx) => CourseNav(),
+          UserHomeFeed.routeName: (ctx) => CourseNav(),
+          EnrolledCourse.routeName: (ctx) => CourseNav(),
+        },
+      ),
+    );
+  }
+}

@@ -23,7 +23,7 @@ class _EnrolledUserState extends State<EnrolledUser> {
   @override
   @override
   List<dynamic> enrolledId = EnrolledUser.enrolledId1;
-  List<UserProfile> users;
+  late List<UserProfile> users;
   String parentId = EnrolledUser.parentId1;
   bool _isLoading = false;
   void initState() {
