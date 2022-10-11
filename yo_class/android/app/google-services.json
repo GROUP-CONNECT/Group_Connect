@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "185363221295",
+    "project_id": "coursehub-38bbd",
+    "storage_bucket": "coursehub-38bbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185363221295:android:4a0b1c6eae52e255d0efda",
+        "android_client_info": {
+          "package_name": "com.groupconnect.coursehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185363221295-lb1ho5bg1iervv7ivp0h03hppffp97tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDniKzi--USt_n3Hhh3Y8yBp9zjEEPZYAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185363221295-lb1ho5bg1iervv7ivp0h03hppffp97tk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
