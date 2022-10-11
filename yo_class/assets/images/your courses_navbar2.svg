@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 211 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(9.10589,-2.22045e-16,-2.22045e-16,8.78749,-686.237,-858.941)">
+        <path id="Health-Data" serif:id="Health Data" d="M76,101C76,99.895 76.887,99 78,99L84,99C85.105,99 86,99.887 86,101L86,107C86,108.105 85.113,109 84,109L78,109C76.895,109 76,108.113 76,107L76,101ZM88,101C88,99.895 88.887,99 90,99L96,99C97.105,99 98,99.887 98,101L98,107C98,108.105 97.113,109 96,109L90,109C88.895,109 88,108.113 88,107L88,101ZM88,113C88,111.895 88.887,111 90,111L96,111C97.105,111 98,111.887 98,113L98,119C98,120.105 97.113,121 96,121L90,121C88.895,121 88,120.113 88,119L88,113ZM76,113C76,111.895 76.887,111 78,111L84,111C85.105,111 86,111.887 86,113L86,119C86,120.105 85.113,121 84,121L78,121C76.895,121 76,120.113 76,119L76,113Z" style="fill:rgb(26,114,255);"/>
+    </g>
+</svg>
