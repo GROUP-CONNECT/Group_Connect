@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class messages extends StatefulWidget {
   String email;
-  messages({required this.email});
+  messages({@required this.email});
   @override
   _messagesState createState() => _messagesState(email: email);
 }
 
 class _messagesState extends State<messages> {
   String email;
-  _messagesState({required this.email});
+  _messagesState({@required this.email});
 
   Stream<QuerySnapshot> _messageStream = FirebaseFirestore.instance
       .collection('Messages')
@@ -31,12 +31,12 @@ class _messagesState extends State<messages> {
         }
 
         return ListView.builder(
-          itemCount: snapshot.data!.docs.length,
+          itemCount: snapshot.data.docs.length,
           physics: ScrollPhysics(),
           shrinkWrap: true,
           primary: true,
           itemBuilder: (_, index) {
-            QueryDocumentSnapshot qs = snapshot.data!.docs[index];
+            QueryDocumentSnapshot qs = snapshot.data.docs[index];
             Timestamp t = qs['time'];
             DateTime d = t.toDate();
             print(d.toString());
