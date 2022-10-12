@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4269ce9c-4430-42cb-bbea-c30869b80352" name="Changes" comment="" />
+    <list default="true" id="4269ce9c-4430-42cb-bbea-c30869b80352" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Group_Connect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Group_Connect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yo_class/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/yo_class/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/yo_class/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yo_class/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/yo_class/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +32,13 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="mains" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
