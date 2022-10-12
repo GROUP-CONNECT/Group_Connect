@@ -49,6 +49,19 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  Widget _selectedFrequency(
+      {@required Color color,
+      @required String title,
+      @required BoxBorder border,
+      @required TextStyle textStyle}) {
+    return Container(
+      height: 45,
+      width: 120,
+      margin: EdgeInsets.symmetric(horizontal: 7),
+      decoration: BoxDecoration(color: color),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,29 +129,54 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 20),
                       child: Container(
-                          height: 300,
-                          child: GridView.count(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 12,
-                            mainAxisSpacing: 8,
-                            childAspectRatio: 1.30,
-                            children: [
-                              _selecctedExtras(
-                                image: "Images/icons.png",
-                                name: "Organising",
-                              ),
-                              _selecctedExtras(
-                                  image: "Images/incons.png", name: "Creating"),
-                              _selecctedExtras(
-                                  image: "images/icons.png", name: "Testing"),
-                              _selecctedExtras(
-                                  image: "images/icons.png", name: "Working"),
-                            ],
-                          )),
+                        height: 300,
+                        child: GridView.count(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 8,
+                          childAspectRatio: 1.30,
+                          children: [
+                            _selecctedExtras(
+                              image: "Images/icons.png",
+                              name: "Organising",
+                            ),
+                            _selecctedExtras(
+                                image: "Images/incons.png", name: "Creating"),
+                            _selecctedExtras(
+                                image: "images/icons.png", name: "Testing"),
+                            _selecctedExtras(
+                                image: "images/icons.png", name: "Working"),
+                          ],
+                        ),
+                      ),
                     )
                   ],
                 ),
-              )
+              ),
+              Container(
+                  padding: EdgeInsets.only(left: 13),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.only(left: 6),
+                          child: Text(
+                            "Selected Frequency",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.amber,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          )),
+                      SingleChildScrollView(
+                          child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [],
+                      ))
+                    ],
+                  ))
             ],
           ),
         ),
