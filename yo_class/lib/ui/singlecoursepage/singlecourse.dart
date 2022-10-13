@@ -13,27 +13,27 @@ class _SingleCoursePageState extends State<SingleCoursePage> {
   static List<Map<String, String>> _courseDetails = [
     {
       'name': 'Introduction to OOP',
-      'location': 'Harare, ZW',
+      'location': 'COCIS, MAKERERE',
     },
     {
       'name': 'OOP Classes',
-      'location': 'Harare, ZW',
+      'location': 'COCIS, MAKERERE',
     },
     {
       'name': 'Php OOP Properties',
-      'location': 'Harare, ZW',
+      'location': 'COCIS, MAKERERE',
     },
     {
       'name': 'OOP Objects',
-      'location': 'Harare, ZW',
+      'location': 'COCIS, MAKERERE',
     },
     {
       'name': 'OOP Inheritance',
-      'location': 'Harare, ZW',
+      'location': 'COCIS, MAKERERE',
     },
     {
       'name': 'OOP Functions',
-      'location': 'Harare Institute Of Technology, ZW',
+      'location': 'COCIS, MAKERERE',
     },
   ];
 
@@ -77,7 +77,7 @@ class _SingleCoursePageState extends State<SingleCoursePage> {
                           ),
                           SizedBox(height: 7),
                           Text(
-                            'Tanyaradzwa Kavumbura',
+                            'ENGINEER',
                             style: singleCourseStudentNameStyle,
                           ),
                         ],
