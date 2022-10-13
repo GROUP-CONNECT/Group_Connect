@@ -1,4 +1,5 @@
 import 'package:coursehub/ui/index.dart';
+import 'package:coursehub/utils/coursehub.colors.dart';
 import 'package:flutter/material.dart';
 
 class Base extends StatefulWidget {
@@ -55,20 +56,27 @@ class _BaseState extends State<Base> {
               ),
               label: 'courses',
               backgroundColor: Colors.white),
+          // BottomNavigationBarItem(
+          //     icon: Icon(
+          //       Icons.person,
+          //       color: Color(0xff4769FF),
+          //     ),
+          //     label: 'profile',
+          //     backgroundColor: Colors.white),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.person,
+                Icons.message,
                 color: Color(0xff4769FF),
               ),
-              label: 'profile',
+              label: 'message',
               backgroundColor: Colors.white),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.message,
-              color: Color(0xff4769FF),
-            ),
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.video_call)),
+              icon: Icon(
+                Icons.video_call,
+                color: lightBlue,
+              ),
+              label: 'video',
+              backgroundColor: Colors.white),
         ],
       ),
     );
