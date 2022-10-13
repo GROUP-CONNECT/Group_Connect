@@ -11,7 +11,8 @@ class _BaseState extends State<Base> {
   int _current = 0;
   final List<Widget> _screens = [
     HomePage(),
-    ExplorePage(),
+    // ExplorePage(),
+    ViewAllCourseScreen(),
     SingleCoursePage(),
   ];
 
