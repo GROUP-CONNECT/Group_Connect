@@ -62,6 +62,13 @@ class _BaseState extends State<Base> {
               ),
               label: 'profile',
               backgroundColor: Colors.white),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.message,
+              color: Color(0xff4769FF),
+            ),
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.video_call)),
         ],
       ),
     );
