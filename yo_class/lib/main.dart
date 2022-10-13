@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'CourseHub',
+      title: 'Yo Class',
       theme: mainTheme,
       home: OnboardingScreen(),
     );

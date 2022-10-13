@@ -52,8 +52,8 @@ class CourseHubAppBar extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: 'Course', style: courseStyle),
-                      TextSpan(text: 'hub', style: hubStyle),
+                      TextSpan(text: 'Yo', style: courseStyle),
+                      TextSpan(text: 'Class', style: hubStyle),
                     ],
                   ),
                 ),
