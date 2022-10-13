@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       height: 120,
       width: 240,
       decoration: BoxDecoration(
-          color: Colors.red, borderRadius: BorderRadius.circular(15.0)),
+          color: Colors.blue, borderRadius: BorderRadius.circular(15.0)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        border: Border.all(color: Colors.red, width: 2),
+        border: Border.all(color: Colors.blue, width: 2),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -138,10 +138,10 @@ class HomePage extends StatelessWidget {
                           children: [
                             _selecctedExtras(
                               image: "Images/icons.png",
-                              name: "Organising",
+                              name: "Computer Science",
                             ),
                             _selecctedExtras(
-                                image: "Images/incons.png", name: "Creating"),
+                                image: "Images/incons.png", name: "Economics"),
                             _selecctedExtras(
                                 image: "images/icons.png", name: "Testing"),
                             _selecctedExtras(
@@ -165,7 +165,7 @@ class HomePage extends StatelessWidget {
                             "Selected Frequency",
                             style: TextStyle(
                               fontSize: 20,
-                              color: Colors.amber,
+                              color: Colors.blue,
                               fontWeight: FontWeight.w400,
                             ),
                           )),

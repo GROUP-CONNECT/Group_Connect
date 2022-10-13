@@ -94,13 +94,13 @@ class _ExplorePageState extends State<ExplorePage>
                 textAlign: TextAlign.center,
                 text: TextSpan(children: [
                   TextSpan(
-                      text: 'Course',
+                      text: 'Yo',
                       style: TextStyle(
                           fontWeight: FontWeight.w600,
                           color: Colors.black,
                           fontSize: 25)),
                   TextSpan(
-                      text: 'hub',
+                      text: 'Class',
                       style: TextStyle(
                           fontSize: 25,
                           color: Colors.blue,
@@ -245,7 +245,7 @@ class _ExplorePageState extends State<ExplorePage>
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
-                        'Top Developers'.toUpperCase(),
+                        'Top Courses'.toUpperCase(),
                         style: TextStyle(
                             color: Colors.blue,
                             fontSize: 25,
@@ -407,7 +407,7 @@ class _ExplorePageState extends State<ExplorePage>
                                     'https://pbs.twimg.com/profile_images/1271971746506252290/E8bs2lts_400x400.jpg'),
                               ),
                               Text(
-                                'TanyaTheCoder',
+                                'King Edwin',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w600),
