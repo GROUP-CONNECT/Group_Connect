@@ -1,5 +1,6 @@
 import 'package:coursehub/ui/index.dart';
 import 'package:flutter/material.dart';
+import 'package:coursehub/chatpage.dart';
 
 class Base extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _BaseState extends State<Base> {
     HomePage(),
     ExplorePage(),
     SingleCoursePage(),
+    chatpage(),
   ];
 
   void _onTap(int index) {
@@ -55,20 +57,22 @@ class _BaseState extends State<Base> {
               ),
               label: 'courses',
               backgroundColor: Colors.white),
+          // BottomNavigationBarItem(
+          //     icon: Icon(
+          //       Icons.person,
+          //       color: Color(0xff4769FF),
+          //     ),
+          //     label: 'profile',
+          //     backgroundColor: Colors.white),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.person,
+                Icons.message,
                 color: Color(0xff4769FF),
               ),
-              label: 'profile',
-              backgroundColor: Colors.white),
+              label: 'Chartroom'),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.message,
-              color: Color(0xff4769FF),
-            ),
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.video_call)),
+              icon: Icon(Icons.video_call, color: Color(0xff4769FF)),
+              label: 'live class'),
         ],
       ),
     );
