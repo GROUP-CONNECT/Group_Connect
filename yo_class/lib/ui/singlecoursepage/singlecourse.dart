@@ -66,7 +66,7 @@ class _SingleCoursePageState extends State<SingleCoursePage> {
                         backgroundImage:
                             AssetImage('assets/images/Profile_navbar2.png'),
                       ),
-                      Siz(width: 10),
+                      SizedBox(width: 10),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
