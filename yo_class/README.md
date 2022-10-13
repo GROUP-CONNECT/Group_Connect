@@ -1,4 +1,4 @@
-# coursehub
+# Yo Class
 
 Online E-Learning App
 
