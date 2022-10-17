@@ -1,6 +1,7 @@
 import 'package:coursehub/ui/account/account.login.dart';
 import 'package:coursehub/ui/account/account.static.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
@@ -13,6 +14,11 @@ class NewAccount extends StatefulWidget {
 }
 
 class _NewAccountState extends State<NewAccount> {
+  Future<FirebaseApp> _initializeFirebase() async {
+    FirebaseApp firebaseApp = await Firebase.initializeApp();
+    return firebaseApp;
+  }
+
   final _formKey = new GlobalKey<FormState>();
   bool showSpinner = false;
   final auth = FirebaseAuth.instance;
