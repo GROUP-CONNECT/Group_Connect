@@ -3,10 +3,14 @@ import 'package:coursehub/ui/account/account.login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'message.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+// Firebase.initializeApp()
 
 class chatpage extends StatefulWidget {
   String email;
   chatpage({@required this.email});
+
   @override
   _chatpageState createState() => _chatpageState(email: email);
 }
@@ -14,6 +18,25 @@ class chatpage extends StatefulWidget {
 class _chatpageState extends State<chatpage> {
   String email;
   _chatpageState({@required this.email});
+  // Set default `_initialized` and `_error` state to false
+  bool _initialized = false;
+  bool _error = false;
+
+  // Define an async function to initialize FlutterFire
+  void initializeFlutterFire() async {
+    try {
+      // Wait for Firebase to initialize and set `_initialized` state to true
+      Firebase.initializeApp();
+      setState(() {
+        _initialized = true;
+      });
+    } catch (e) {
+      // Set `_error` state to true if Firebase initialization fails
+      setState(() {
+        _error = true;
+      });
+    }
+  }
 
   final fs = FirebaseFirestore.instance;
   final _auth = FirebaseAuth.instance;

@@ -1,3 +1,4 @@
+import 'package:coursehub/chatpage.dart';
 import 'package:coursehub/ui/index.dart';
 import 'package:coursehub/utils/coursehub.colors.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +12,10 @@ class _BaseState extends State<Base> {
   int _current = 0;
   final List<Widget> _screens = [
     HomePage(),
-    // ExplorePage(),
+    //ExplorePage(),
     ViewAllCourseScreen(),
     SingleCoursePage(),
+    chatpage(),
   ];
 
   void _onTap(int index) {

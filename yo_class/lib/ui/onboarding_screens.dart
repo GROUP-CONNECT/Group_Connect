@@ -140,7 +140,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: Text(
                 'CREATE NEW ACCOUNT',
                 style: TextStyle(
-                    color: Colors.lightBlue,
+                    color: Colors.blue,
                     fontFamily: 'Lato',
                     fontWeight: FontWeight.bold),
               ),
@@ -158,7 +158,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             child: Text(
               'LOG IN',
               style: TextStyle(
-                  color: Color(0xff1A72FF),
+                  color: Colors.blue,
                   fontFamily: 'Lato',
                   fontWeight: FontWeight.bold),
             ),

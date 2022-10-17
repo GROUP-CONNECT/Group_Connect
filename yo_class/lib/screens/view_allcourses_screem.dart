@@ -4,6 +4,22 @@ import 'package:provider/provider.dart';
 
 import '../models/course_provider.dart';
 import '../widgets/custom_appbar.dart';
+import '/models/auth.dart';
+
+Widget build(BuildContext context) {
+  return MultiProvider(providers: [
+    ChangeNotifierProvider(
+      create: (_) => Auth(),
+    ),
+    ChangeNotifierProxyProvider<Auth, Courses>(
+      create: null,
+      update: (ctx, auth, previousCourse) => Courses(
+        auth.userId, //token is the userid.
+        previousCourse == null ? [] : previousCourse.courseData,
+      ),
+    ),
+  ]);
+}
 
 class ViewAllCourseScreen extends StatelessWidget {
   @override
@@ -57,14 +73,16 @@ class ViewAllCourseScreen extends StatelessWidget {
                                     child: AutoSizeText(
                                       _courses.courseData[index].coursename,
                                       maxLines: 3,
-                                      style: Theme.of(context).textTheme.subtitle1,
+                                      style:
+                                          Theme.of(context).textTheme.subtitle1,
                                     ),
                                   ),
                                   Expanded(
                                     child: AutoSizeText(
                                       'Ratings - ${_courses.courseData[index].ratings}',
                                       maxLines: 3,
-                                      style: Theme.of(context).textTheme.subtitle2,
+                                      style:
+                                          Theme.of(context).textTheme.subtitle2,
                                     ),
                                   ),
                                 ],
