@@ -2,6 +2,7 @@ import 'package:coursehub/chatpage.dart';
 import 'package:coursehub/ui/index.dart';
 import 'package:coursehub/utils/coursehub.colors.dart';
 import 'package:flutter/material.dart';
+import 'package:coursehub/chatpage.dart';
 
 class Base extends StatefulWidget {
   @override
@@ -71,15 +72,10 @@ class _BaseState extends State<Base> {
                 Icons.message,
                 color: Color(0xff4769FF),
               ),
-              label: 'message',
-              backgroundColor: Colors.white),
+              label: 'Chartroom'),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.video_call,
-                color: lightBlue,
-              ),
-              label: 'video',
-              backgroundColor: Colors.white),
+              icon: Icon(Icons.video_call, color: Color(0xff4769FF)),
+              label: 'live class'),
         ],
       ),
     );
