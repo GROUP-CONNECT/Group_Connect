@@ -5,12 +5,7 @@ import 'package:provider/provider.dart';
 import '../models/course_provider.dart';
 import '../widgets/custom_appbar.dart';
 
-class ViewAllCourseScreen extends StatefulWidget {
-  @override
-  State<ViewAllCourseScreen> createState() => _ViewAllCourseScreenState();
-}
-
-class _ViewAllCourseScreenState extends State<ViewAllCourseScreen> {
+class ViewAllCourseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _courses = Provider.of<Courses>(context, listen: false);
@@ -62,16 +57,14 @@ class _ViewAllCourseScreenState extends State<ViewAllCourseScreen> {
                                     child: AutoSizeText(
                                       _courses.courseData[index].coursename,
                                       maxLines: 3,
-                                      style:
-                                          Theme.of(context).textTheme.subtitle1,
+                                      style: Theme.of(context).textTheme.subtitle1,
                                     ),
                                   ),
                                   Expanded(
                                     child: AutoSizeText(
                                       'Ratings - ${_courses.courseData[index].ratings}',
                                       maxLines: 3,
-                                      style:
-                                          Theme.of(context).textTheme.subtitle2,
+                                      style: Theme.of(context).textTheme.subtitle2,
                                     ),
                                   ),
                                 ],
