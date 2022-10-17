@@ -1,4 +1,5 @@
 import 'package:coursehub/ui/index.dart';
+import 'package:coursehub/utils/coursehub.colors.dart';
 import 'package:flutter/material.dart';
 import 'package:coursehub/chatpage.dart';
 

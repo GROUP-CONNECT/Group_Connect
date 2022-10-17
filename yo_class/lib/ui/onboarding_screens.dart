@@ -33,7 +33,7 @@ final List carouselImages = map<Widget>(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Course',
+                    'Yo',
                     style: TextStyle(
                         color: Color(0xff1A72FF),
                         fontFamily: 'Lato',
@@ -41,7 +41,7 @@ final List carouselImages = map<Widget>(
                         fontSize: 25),
                   ),
                   Text(
-                    'hub',
+                    'Class',
                     style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Lato',
@@ -140,7 +140,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: Text(
                 'CREATE NEW ACCOUNT',
                 style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.lightBlue,
                     fontFamily: 'Lato',
                     fontWeight: FontWeight.bold),
               ),
